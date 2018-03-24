@@ -15,7 +15,6 @@
         <property name="name" value="Hello Trzeci!" />
         <property name="bean" ref="myFirstBean" />
     </bean>
-
     <context:annotation-config />
     <context:component-scan base-package="pl.sternik.mr.zadania.spring" />
 </beans>

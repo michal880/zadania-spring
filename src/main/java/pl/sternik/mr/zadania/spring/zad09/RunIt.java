@@ -3,6 +3,7 @@ package pl.sternik.mr.zadania.spring.zad09;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import pl.sternik.mr.zadania.spring.zad02.MySecondBean;
 
 //import MyFirstBean;
 //import MySecondBean;
@@ -10,12 +11,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class RunIt {
 	public static void main(String[] args) {
-//		AnnotationConfigApplicationContext ctx = 
-//		        new AnnotationConfigApplicationContext(
-//				BeanConfigurator.class);
-//
-//		MySecondBean obj2 = (MySecondBean) ctx.getBean("myDrugi");
-//		System.out.println(obj2.getName());
+		AnnotationConfigApplicationContext ctx =
+		        new AnnotationConfigApplicationContext(
+				BeanConfigurator.class);
+
+		MySecondBean obj2 = (MySecondBean) ctx.getBean("myDrugi");
+		System.out.println(obj2.getName());
 //
 //		MySecondBean obj3 = (MySecondBean) ctx.getBean("myDrugiNazwany");
 //		System.out.println(obj3.getName());
